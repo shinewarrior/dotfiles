@@ -1,0 +1,13 @@
+[window]
+padding.x = 10
+padding.y = 10
+opacity = 0.95
+blur = true
+title = "Bora is awesome!"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "ExtraBold" }
+bold = { style = "ExtraBold" }
+italic = { style = "Bold Italic" }
+bold_italic = { style = "ExtraBold Italic" }
+size = 12
