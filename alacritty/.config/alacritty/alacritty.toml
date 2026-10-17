@@ -56,7 +56,7 @@ white = "0xECEFF4"
 
 
 [cursor]
-style = { shape = "Beam" }
+style = { shape = "Block" }
 unfocused_hollow = true
 
 [selection]
