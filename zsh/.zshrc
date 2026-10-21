@@ -1,8 +1,12 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
-ZSH=/usr/share/oh-my-zsh/
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  ZSH="$HOME/.oh-my-zsh"
+else
+  ZSH=/usr/share/oh-my-zsh/
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -116,3 +120,6 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
