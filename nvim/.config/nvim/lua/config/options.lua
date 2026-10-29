@@ -19,3 +19,4 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 })
 
 vim.opt.diffopt:append("followwrap")
+vim.g.root_spec = { { ".git" }, "cwd" }
